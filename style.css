@@ -1,0 +1,166 @@
+:root {
+    --main-color: #7b2407;
+    --red: #d84040;
+    --windows-color: #f2c00d;
+    --internet-color: #295974;
+    --dark-blue: #3b65c0;
+    --mp-color: #eb6b00;
+    --me-color: #419f61;
+    --ma-color: #ea5525;
+    --blue: #519fde;
+    --dark: #504f4f;
+    --orange: hsl(20deg 83% 54%);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: IranSansWeb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--dark);
+}
+
+body {
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+.container {
+    width: 1450px;
+    max-width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* button style */
+
+.btn-one-my {
+    background: linear-gradient(var(--red), var(--orange));
+    color: var(--white);
+}
+
+.btn-two-my {
+    background: linear-gradient(var(--dark-blue), var(--blue));
+    color: var(--white);
+}
+
+.animate-before {
+    position: relative;
+    display: flex;
+    gap: 15px;
+}
+
+.animate-before::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    background: radial-gradient(var(--red), var(--orange));
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+
+/* Navigation Style */
+
+ul.navbar-nav.navigation-my {
+    flex-direction: revert;
+    gap: 30px;
+}
+
+.navigation-my .nav-item a {
+    color: var(--orange);
+    border-bottom: 1px solid;
+    display: block;
+    min-width: 56px;
+    text-align: center;
+}
+
+
+/* course items */
+
+.course-item img {
+    border-radius: 50%;
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.teacher-item img {
+    height: 100%;
+}
+
+.course-item .card {
+    background: none !important;
+}
+
+
+/* student section */
+
+.swiper-container.students-slider {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.students-slider .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+}
+
+.students-slider .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+
+/* contact us style */
+
+.contactus .col-form {
+    background: #fff;
+}
+
+.contactus .col-img {
+    padding: 0 !important;
+}
+
+.contactus input {
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 0;
+}
+
+.contactus .contactus-row {
+    box-shadow: 0 0 20px #cccccc47;
+}
+
+#view-one {
+    overflow: hidden;
+}
+
+#view-3,
+#view-4,
+#view-5,
+#view-6 {
+    margin-top: 150px;
+}
+
+@font-face {
+    font-family: IranSansWeb;
+    src: url('./font/IRANSansWeb(FaNum).woff2') format('woff2'), url('./font/IRANSansWeb(FaNum).woff') format('woff'), url('./font/IRANSansWeb(FaNum).ttf') format('truetype')
+}

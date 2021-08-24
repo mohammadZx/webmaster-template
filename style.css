@@ -160,6 +160,19 @@ ul.navbar-nav.navigation-my {
     margin-top: 150px;
 }
 
+
+/* partisals js */
+
+div#particles-js {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
 @font-face {
     font-family: IranSansWeb;
     src: url('./font/IRANSansWeb(FaNum).woff2') format('woff2'), url('./font/IRANSansWeb(FaNum).woff') format('woff'), url('./font/IRANSansWeb(FaNum).ttf') format('truetype')
